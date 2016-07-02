@@ -5,4 +5,4 @@ WORKDIR /app
 RUN ["dotnet", "restore"]
 
 EXPOSE 8080
-ENTRYPOINT ["dnx", "-p", "project.json", "kestrel"] 
+ENTRYPOINT ["dotnet", "run"] 
