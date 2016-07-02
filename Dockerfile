@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:1.0.0-core-sdk
+FROM microsoft/dotnet:1.0.0-core
 
 COPY . /app
 WORKDIR /app
