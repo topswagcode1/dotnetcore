@@ -4,5 +4,4 @@ COPY . /app
 WORKDIR /app/app
 RUN ["dotnet", "restore"]
 
-EXPOSE 8080
 ENTRYPOINT ["dotnet", "run"] 
