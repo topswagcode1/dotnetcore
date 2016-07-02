@@ -5,4 +5,4 @@ WORKDIR /app
 RUN ["dotnet", "restore"]
 
 EXPOSE 8080
-ENTRYPOINT [ "app/dotnet", "run"] 
+ENTRYPOINT ["cd", "app" "dotnet", "run"] 
