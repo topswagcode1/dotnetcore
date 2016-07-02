@@ -10,7 +10,6 @@ namespace topswagcodeapp
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:8080")
                 .Build();
 
             host.Run();
