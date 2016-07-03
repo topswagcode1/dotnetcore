@@ -4,4 +4,4 @@ COPY . /app
 WORKDIR /app/app
 RUN ["dotnet", "restore"]
 
-ENTRYPOINT ["dotnet", "run"] 
+ENTRYPOINT ["dotnet", "run", "&"] 
