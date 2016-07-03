@@ -10,7 +10,7 @@ namespace topswagcodeapp
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseStartup<Startup>()
-                .UseUrls("http://0.0.0.0:5000", "http://scalaplay.cloudapp.net:5001", "http://localhost:5003")
+                .UseUrls("http://*:5000")
                 .Build();
 
             host.Run();
