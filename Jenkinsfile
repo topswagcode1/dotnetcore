@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('pull') {
       steps {
-        sh 'checkout https://github.com/kiksen1987/dotnetcore.git && cd dotnetcore && dotnet publish'
+        git(url: 'https://github.com/kiksen1987/dotnetcore.git', credentialsId: 'github', poll: true)
       }
     }
   }
