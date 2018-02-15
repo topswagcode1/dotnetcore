@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'cd dotnetcore && dotnet publish'
+        sh 'ls && cd dotnetcore && dotnet publish'
       }
     }
   }
