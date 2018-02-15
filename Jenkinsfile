@@ -6,5 +6,10 @@ pipeline {
         git(url: 'https://github.com/kiksen1987/dotnetcore.git', credentialsId: 'github', poll: true)
       }
     }
+    stage('build') {
+      steps {
+        sh 'ls'
+      }
+    }
   }
 }
