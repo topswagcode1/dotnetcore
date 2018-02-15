@@ -8,7 +8,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        sh 'ls'
+        sh ' ls && cd app && ls && dotnet publish && ls'
       }
     }
   }
