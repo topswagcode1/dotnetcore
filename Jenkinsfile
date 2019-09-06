@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    docker { image 'mcr.microsoft.com/dotnet/core/sdk:2.2' }
+  }
   stages {
     stage('pull') {
       steps {
@@ -8,7 +10,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        sh ' ls && cd app && ls && dotnet publish && ls'
+        sh 'ls && dotnet publish && ls'
       }
     }
   }
