@@ -12,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace dotnetcore 
 {
-    public class Startup
+    public class 
     {
         public Startup(IConfiguration configuration)
         {
